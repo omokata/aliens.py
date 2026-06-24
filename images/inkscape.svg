@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="air_defense.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   inkscape:export-batch-name="bullet"
+   inkscape:export-batch-path="/home/muhdamin/dev/aliens.py/images"
+   sodipodi:docname="inkscape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4307099"
+     inkscape:cx="359.26221"
+     inkscape:cy="831.40544"
+     inkscape:window-width="1853"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7"
+       transform="matrix(0.84330764,0,0,0.98063973,27.822193,88.986628)">
+      <g
+         id="g8">
+        <rect
+           style="fill:#008000;stroke-width:0.115461"
+           id="rect1"
+           width="19.972601"
+           height="15.904104"
+           x="81.554787"
+           y="196.02739" />
+        <rect
+           style="fill:#008000;stroke-width:0.187088"
+           id="rect2"
+           width="11.650684"
+           height="15.904109"
+           x="85.715744"
+           y="188.07533" />
+        <rect
+           style="fill:#225500;stroke-width:0.264583"
+           id="rect5"
+           width="11.650684"
+           height="0.92465752"
+           x="85.669518"
+           y="195.19521" />
+      </g>
+      <rect
+         style="fill:#225500;stroke-width:0.264583"
+         id="rect6"
+         width="19.926369"
+         height="1.0633562"
+         x="81.50856"
+         y="195.98116" />
+    </g>
+    <g
+       id="g9"
+       transform="matrix(0.63838218,0,0,0.77261065,39.537398,47.729349)"
+       inkscape:export-filename="aliens.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <ellipse
+         style="fill:#241c1c;stroke-width:0.264583"
+         id="ellipse8"
+         cx="102.54453"
+         cy="210.82191"
+         rx="23.393835"
+         ry="7.2123289" />
+      <ellipse
+         style="fill:#483737;stroke-width:0.264583"
+         id="path1"
+         cx="102.54453"
+         cy="208.23288"
+         rx="23.393835"
+         ry="7.2123289" />
+      <ellipse
+         style="fill:#de8787;fill-opacity:1;stroke:#eba3a3;stroke-width:0.23326;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse9"
+         cx="102.26713"
+         cy="202.2226"
+         rx="14.584357"
+         ry="8.4302464" />
+      <ellipse
+         style="fill:#facece;fill-opacity:1;stroke:#eba3a3;stroke-width:0.265;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path2"
+         cx="102.26713"
+         cy="198.80136"
+         rx="14.79452"
+         ry="10.726027" />
+    </g>
+    <ellipse
+       style="fill:#ff00ff;fill-opacity:1;stroke:#eba3a3;stroke-width:0.225564;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path9"
+       cx="104.85615"
+       cy="223.39723"
+       rx="4.0882101"
+       ry="3.9032784"
+       inkscape:export-filename="alien_laser.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffff00;stroke:#eba3a3;stroke-width:0.264999"
+       id="path3"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="82.849312"
+       sodipodi:cy="249.4726"
+       sodipodi:r1="3.5907204"
+       sodipodi:r2="1.7953601"
+       sodipodi:arg1="0.96850898"
+       sodipodi:arg2="1.5968275"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 84.883558,252.4315 -2.080976,-1.16415 -2.138738,1.05428 0.464117,-2.33887 -1.663589,-1.70827 2.367817,-0.28135 1.110583,-2.11005 0.999274,2.16499 2.349968,0.40418 -1.750232,1.61939 z"
+       inkscape:transform-center-x="-0.03831913"
+       inkscape:transform-center-y="-0.40520666"
+       transform="matrix(1.32659,0,0,1.2851231,-4.9686544,-51.70767)"
+       inkscape:export-filename="bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
