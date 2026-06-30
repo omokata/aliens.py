@@ -1,0 +1,81 @@
+name: Build with Pyinstaller
+on: workflow_dispatch
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v7
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Initialize Python's VENV
+        run: python -m venv .venv
+      - name: Pip install
+        run: |
+          ./.venv/bin/pip install -r requirements.txt
+          ./.venv/bin/pip install pyinstaller
+      - name: Pyinstaller
+        run: ./.venv/bin/pyinstaller aliens.py
+      - name: Zip dist folder
+        run: zip linux-dist.zip -r dist
+      - name: Upload linux-dist.zip to Release
+        run: |
+          gh release upload ${{ github.ref_name }} linux-dist.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-windows:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v7
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Initialize Python's VENV
+        run: python -m venv .venv
+      - name: Pip install
+        run: |
+          ./.venv/Scripts/pip install -r requirements.txt
+          ./.venv/Scripts/pip install pyinstaller
+      - name: Pyinstaller
+        run: ./.venv/Scripts/pyinstaller aliens.py
+      - name: Zip dist folder
+        run: Compress-Archive -Path dist -DestinationPath windows-dist.zip
+      - name: Upload windows-dist.zip to Release
+        run: |
+          gh release upload ${{ github.ref_name }} windows-dist.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-macos:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v7
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Initialize Python's VENV
+        run: python -m venv .venv
+      - name: Pip install
+        run: |
+          ./.venv/bin/pip install -r requirements.txt
+          ./.venv/bin/pip install pyinstaller
+      - name: Pyinstaller
+        run: ./.venv/bin/pyinstaller aliens.py
+      - name: Zip dist folder
+        run: zip macos-dist.zip -r dist
+      - name: Upload macos-dist.zip to Release
+        run: |
+          gh release upload ${{ github.ref_name }} macos-dist.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
