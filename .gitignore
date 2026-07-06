@@ -3,3 +3,4 @@ __pycache__/
 dist/
 build/
 aliens.spec
+score.txt
